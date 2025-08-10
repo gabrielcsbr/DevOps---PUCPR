@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import random
 
 app = FastAPI()
 
@@ -9,5 +10,4 @@ async def root():
 
 @app.get('/funcaoteste')
 async def funcaoteste():
-    return {'teste': 'deu certo'}
 
